@@ -156,10 +156,10 @@ class TicketViewSet(OptimizedQuerySetMixin, viewsets.ReadOnlyModelViewSet):
         return queryset.select_related('author').prefetch_related('author__accounts')
 ```
 
-Now, it is up to the client to decide which of the following options is most appropriate:
+Now, it is up to the client to decide which of the following options (or anything else imaginable) is most appropriate:
 
 ```http
-# Includes specified local fields plus all author fields and relationships
+ // Includes specified local fields plus all author fields and relationships
 
 GET /api/tickets/?fields=id,title,author
 
@@ -206,6 +206,8 @@ GET /api/tickets/?fields=id,title,author(username,photo)
 # Includes specified local fields plus specified author fields and relationships plus specified accounts fields and relationships
 
 GET /api/tickets/?fields=id,title,author(id,accounts(id,type_of,date))
+
+200 OK
  [
     {
         "id": 1,
