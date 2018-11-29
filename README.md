@@ -139,18 +139,15 @@ Naturally, if `accounts` is sensitive, internal data, you simply might not use _
 ```py
 class TicketViewSet(OptimizedQuerySetMixin, viewsets.ReadOnlyModelViewSet):
 
-    # Normally, for optimal performance, you would apply the `select_related('author')`
-    # call to the base queryset, but that is no longer desireable for data relationships
-    # that your frontend may stop asking for.
     queryset = Ticket.objects.all()
     serializer_class = TicketSerializer
 
-    # Data-predicate declaration is optional, but encouraged. This
-    # is where the library really shines!
     @data_predicate('author')
     def load_author(self, queryset):
         return queryset.select_related('author')
 
+    # Add this extra data_predicate with prefetches `accounts` if and only if
+    # the requests promises to use that information
     @data_predicate('author.accounts')
     def load_author_with_accounts(self, queryset):
         return queryset.select_related('author').prefetch_related('author__accounts')
