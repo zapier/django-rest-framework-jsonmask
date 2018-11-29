@@ -1,4 +1,4 @@
-[![Build Status](https://api.travis-ci.com/zapier/django-rest-framework-jsonmask.svg?branch=master)](https://travis-ci.org/zapier/django-rest-framework-jsonmask) [![Coverage Status](https://img.shields.io/coveralls/zapier/django-rest-framework-jsonmask/master.svg)](https://coveralls.io/r/zapier/django-rest-framework-jsonmask) [![PyPI Version](https://img.shields.io/pypi/v/django-rest-framework-jsonmask.svg)](https://pypi.org/project/django-rest-framework-jsonmask)
+[![Build Status](https://api.travis-ci.com/zapier/django-rest-framework-jsonmask.svg?branch=master)](https://travis-ci.org/zapier/django-rest-framework-jsonmask) [![Coverage Status](https://img.shields.io/coveralls/zapier/django-rest-framework-jsonmask/master.svg)](https://coveralls.io/r/zapier/django-rest-framework-jsonmask) [![PyPI Version](https://img.shields.io/pypi/v/djangorestframework-jsonmask.svg)](https://pypi.org/project/django-rest-framework-jsonmask)
 
 ---
 
@@ -242,9 +242,9 @@ $ make tests
 
 or keep them running on change:
 
- ```bash
+```bash
 $ make watch
-``
+```
 
 You can also use the excellent [tox](http://tox.readthedocs.org/en/latest/) testing tool to run the tests against all supported versions of Python and Django. Install tox globally, and then simply run:
 
