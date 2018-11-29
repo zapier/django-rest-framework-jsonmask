@@ -68,6 +68,7 @@ setup(
     name=name,
     version=version,
     url=url,
+    download_url="https://github.com/zapier/django-rest-framework-jsonmask/tarball/{0}".format(version),
     license=license,
     description=description,
     author=author,
