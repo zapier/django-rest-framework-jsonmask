@@ -9,9 +9,9 @@ from setuptools import setup
 name = 'djangorestframework-jsonmask'
 package = 'rest_framework_jsonmask'
 description = 'Implements Google\'s partial response in Django RestFramework'
-url = 'https://github.com/craiglabenz/django-rest-framework-jsonmask'
+url = 'https://github.com/zapier/django-rest-framework-jsonmask'
 author = 'Craig Labenz'
-author_email = 'craig@zapier.com'
+author_email = 'craig.labenz@zapier.com'
 license = 'BSD'
 
 
@@ -74,9 +74,13 @@ setup(
     author_email=author_email,
     packages=get_packages(package),
     package_data=get_package_data(package),
-    install_requires=[],
+    install_requires=[
+        'jsonmask',
+        'Django>=1.11',
+        'djangorestframework>=3.5',
+    ],
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Framework :: Django :: 1.11',
@@ -89,10 +93,10 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Topic :: Internet :: WWW/HTTP',
+        'Topic :: Software Development :: Libraries :: Python Modules'
     ]
 )

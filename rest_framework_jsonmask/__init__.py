@@ -1,3 +1,8 @@
 from __future__ import unicode_literals
 
-__version__ = '0.1.0'
+"""Package for DRF-jsonmask"""
+
+__project__ = "restframework_jsonmask"
+__version__ = "0.1.0rc1"
+
+VERSION = __project__ + '-' + __version__
