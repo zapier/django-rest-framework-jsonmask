@@ -1,4 +1,4 @@
-[![Build Status](https://img.shields.io/travis/zapier/django-rest-framework-jsonmask/master.svg)](https://travis-ci.org/zapier/django-rest-framework-jsonmask) [![Coverage Status](https://img.shields.io/coveralls/zapier/django-rest-framework-jsonmask/master.svg)](https://coveralls.io/r/zapier/django-rest-framework-jsonmask) [![PyPI Version](https://img.shields.io/pypi/v/django-rest-framework-jsonmask.svg)](https://pypi.org/project/django-rest-framework-jsonmask)
+[![Build Status](https://api.travis-ci.com/zapier/django-rest-framework-jsonmask.svg?branch=master)](https://travis-ci.org/zapier/django-rest-framework-jsonmask) [![Coverage Status](https://img.shields.io/coveralls/zapier/django-rest-framework-jsonmask/master.svg)](https://coveralls.io/r/zapier/django-rest-framework-jsonmask) [![PyPI Version](https://img.shields.io/pypi/v/django-rest-framework-jsonmask.svg)](https://pypi.org/project/django-rest-framework-jsonmask)
 
 ---
 
