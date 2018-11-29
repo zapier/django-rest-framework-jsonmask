@@ -159,7 +159,7 @@ class TicketViewSet(OptimizedQuerySetMixin, viewsets.ReadOnlyModelViewSet):
 Now, it is up to the client to decide which of the following options (or anything else imaginable) is most appropriate:
 
 ```http
- // Includes specified local fields plus all author fields and relationships
+ # Includes specified local fields plus all author fields and relationships
 
 GET /api/tickets/?fields=id,title,author
 

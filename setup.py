@@ -24,6 +24,12 @@ def get_version(package):
                      init_py, re.MULTILINE).group(1)
 
 
+def get_long_description(package):
+    """
+    Read the contents of README.md
+    """
+    return open(os.path.join(package, '..', 'README.md')).read()
+
 def get_packages(package):
     """
     Return root package and all sub-packages.
@@ -71,6 +77,8 @@ setup(
     download_url="https://github.com/zapier/django-rest-framework-jsonmask/tarball/{0}".format(version),
     license=license,
     description=description,
+    long_description=get_long_description(package),
+    long_description_content_type='text/markdown',
     author=author,
     author_email=author_email,
     packages=get_packages(package),
