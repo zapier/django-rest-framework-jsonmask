@@ -152,7 +152,7 @@ class TicketViewSet(OptimizedQuerySetMixin, viewsets.ReadOnlyModelViewSet):
         return queryset.select_related('author')
 
     @data_predicate('author.accounts')
-    def load_author(self, queryset):
+    def load_author_with_accounts(self, queryset):
         return queryset.select_related('author').prefetch_related('author__accounts')
 ```
 
