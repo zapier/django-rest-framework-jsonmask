@@ -215,12 +215,12 @@ GET /api/tickets/?fields=id,title,author(id,accounts(id,type_of,date))
                 {
                     "id": 8001,
                     "type_of": "business",
-                    "date": 2018-01-01T12:00:00Z"
+                    "date": "2018-01-01T12:00:00Z"
                 },
                 {
                     "id": 6500,
                     "type_of": "trial",
-                    "date": 2017-06-01T12:00:00Z"
+                    "date": "2017-06-01T12:00:00Z"
                 }
             ]
         }
